@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/StudioProjects/Tripie-Admin/app/src/main/res/drawable/button_blue_rounded.xml" value="0.224" />
+        <entry key="..\:/StudioProjects/Tripie-Admin/app/src/main/res/drawable/ic_home.xml" value="0.1955" />
+        <entry key="..\:/StudioProjects/Tripie-Admin/app/src/main/res/drawable/ic_plane.xml" value="0.2425" />
+        <entry key="..\:/StudioProjects/Tripie-Admin/app/src/main/res/drawable/ic_sort_asc.xml" value="0.222" />
+        <entry key="..\:/StudioProjects/Tripie-Admin/app/src/main/res/drawable/ic_sort_desc.xml" value="0.222" />
+        <entry key="..\:/StudioProjects/Tripie-Admin/app/src/main/res/drawable/ic_trolly.xml" value="0.2425" />
+        <entry key="..\:/StudioProjects/Tripie-Admin/app/src/main/res/layout/activity_login.xml" value="0.22239583333333332" />
+        <entry key="..\:/StudioProjects/Tripie-Admin/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/StudioProjects/Tripie-Admin/app/src/main/res/layout/activity_splash_screen.xml" value="0.23645833333333333" />
+        <entry key="..\:/StudioProjects/Tripie-Admin/app/src/main/res/layout/appbar_dashboard.xml" value="0.20923913043478262" />
+        <entry key="..\:/StudioProjects/Tripie-Admin/app/src/main/res/layout/drawer_header.xml" value="0.264" />
+        <entry key="..\:/StudioProjects/Tripie-Admin/app/src/main/res/layout/fragment_booked_ticket.xml" value="0.21422101449275363" />
+        <entry key="..\:/StudioProjects/Tripie-Admin/app/src/main/res/layout/fragment_flight.xml" value="0.264" />
+        <entry key="..\:/StudioProjects/Tripie-Admin/app/src/main/res/layout/fragment_login_admin.xml" value="0.22239583333333332" />
+        <entry key="..\:/StudioProjects/Tripie-Admin/app/src/main/res/layout/fragment_splash_screen.xml" value="0.22826086956521738" />
+        <entry key="..\:/StudioProjects/Tripie-Admin/app/src/main/res/layout/item_penerbangan.xml" value="0.40150093808630394" />
+        <entry key="..\:/StudioProjects/Tripie-Admin/app/src/main/res/menu/drawer_menu.xml" value="0.4" />
+      </map>
+    </option>
+  </component>
+  <component name="EntryPointsManager">
+    <entry_points version="2.0">
+      <entry_point TYPE="field" FQNAME="binar.academy.kelompok6.tripie_admin.view.flightlist.AddFlightFragment airportViewModel$delegate" />
+      <entry_point TYPE="field" FQNAME="binar.academy.kelompok6.tripie_admin.view.flightlist.AddFlightFragment flightScheduleViewModel$delegate" />
+      <entry_point TYPE="field" FQNAME="binar.academy.kelompok6.tripie_admin.dashboard.viewmodel.AdminDashboardViewModelTest service" />
+      <entry_point TYPE="field" FQNAME="binar.academy.kelompok6.tripie_admin.data.datastore.SharedPref email" />
+      <entry_point TYPE="field" FQNAME="binar.academy.kelompok6.tripie_admin.data.datastore.SharedPref getEmail" />
+      <entry_point TYPE="field" FQNAME="binar.academy.kelompok6.tripie_admin.data.datastore.SharedPref getName" />
+      <entry_point TYPE="field" FQNAME="binar.academy.kelompok6.tripie_admin.data.datastore.SharedPref getPlane" />
+      <entry_point TYPE="field" FQNAME="binar.academy.kelompok6.tripie_admin.data.datastore.SharedPref getToken" />
+      <entry_point TYPE="field" FQNAME="binar.academy.kelompok6.tripie_admin.data.datastore.SharedPref name" />
+      <entry_point TYPE="field" FQNAME="binar.academy.kelompok6.tripie_admin.data.datastore.SharedPref planeClass" />
+      <entry_point TYPE="field" FQNAME="binar.academy.kelompok6.tripie_admin.data.datastore.SharedPref token" />
+      <entry_point TYPE="field" FQNAME="binar.academy.kelompok6.tripie_admin.view.historybookedticket.adapter.BookedTicketAdapter differ" />
+      <entry_point TYPE="field" FQNAME="binar.academy.kelompok6.tripie_admin.view.historybookedticket.adapter.BookedTicketAdapter filteredBooking" />
+    </entry_points>
+    <pattern value="binar.academy.kelompok6.tripie_admin.view.flightlist.AddFlightFragment" method="getBinding" />
+    <pattern value="binar.academy.kelompok6.tripie_admin.view.flightlist.AddFlightFragment" method="getDateFromDatePicker" />
+    <pattern value="binar.academy.kelompok6.tripie_admin.view.flightlist.AddFlightFragment" method="getNameDestinationAirport" />
+    <pattern value="binar.academy.kelompok6.tripie_admin.data.datastore.SharedPref" method="removeToken" />
+    <pattern value="binar.academy.kelompok6.tripie_admin.data.datastore.SharedPref" method="saveData" />
+    <pattern value="binar.academy.kelompok6.tripie_admin.data.datastore.SharedPref" method="savePlane" />
+    <pattern value="binar.academy.kelompok6.tripie_admin.data.datastore.SharedPref" />
+    <pattern value="binar.academy.kelompok6.tripie_admin.data.datastore.SharedPref" method="SharedPref" />
+    <pattern value="binar.academy.kelompok6.tripie_admin.model.response.DataAddSchedule" />
+    <pattern value="binar.academy.kelompok6.tripie_admin.model.response.DataAddSchedule" method="DataAddSchedule" />
+    <pattern value="binar.academy.kelompok6.tripie_admin.view.historybookedticket.adapter.BookedTicketAdapter.ViewHolder" method="bind" />
+    <pattern value="binar.academy.kelompok6.tripie_admin.view.historybookedticket.adapter.BookedTicketAdapter" />
+    <pattern value="binar.academy.kelompok6.tripie_admin.view.historybookedticket.adapter.BookedTicketAdapter" method="BookedTicketAdapter" />
+    <pattern value="binar.academy.kelompok6.tripie_admin.view.historybookedticket.adapter.BookedTicketAdapter.BookedTicketInterface" />
+    <pattern value="binar.academy.kelompok6.tripie_admin.view.historybookedticket.adapter.BookedTicketAdapter.BookedTicketInterface" method="onItemClick" />
+    <pattern value="binar.academy.kelompok6.tripie_admin.view.historybookedticket.adapter.BookedTicketAdapter" method="setData" />
+    <pattern value="binar.academy.kelompok6.tripie_admin.view.historybookedticket.adapter.BookedTicketAdapter.ViewHolder" />
+    <pattern value="binar.academy.kelompok6.tripie_admin.view.historybookedticket.adapter.BookedTicketAdapter.ViewHolder" method="ViewHolder" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

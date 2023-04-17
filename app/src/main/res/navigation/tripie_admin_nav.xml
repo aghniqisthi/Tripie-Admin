@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tripie_admin_nav"
+    app:startDestination="@id/dashboardFragment">
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="binar.academy.kelompok6.tripie_admin.view.dashboard.DashboardFragment"
+        android:label="fragment_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+    <fragment
+        android:id="@+id/flightFragment"
+        android:name="binar.academy.kelompok6.tripie_admin.view.flightlist.FlightFragment"
+        android:label="fragment_flight"
+        tools:layout="@layout/fragment_flight" >
+        <action
+            android:id="@+id/action_flightFragment_to_editFlightFragment"
+            app:destination="@id/editFlightFragment" />
+        <action
+            android:id="@+id/action_flightFragment_to_addFlightFragment"
+            app:destination="@id/addFlightFragment" />
+        <action
+            android:id="@+id/action_flightFragment_to_sortingPriceDialog"
+            app:destination="@id/sortingPriceDialog" />
+        <action
+            android:id="@+id/action_flightFragment_to_flightFilterListDialog"
+            app:destination="@id/flightFilterListDialog" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookedTicketFragment"
+        android:name="binar.academy.kelompok6.tripie_admin.view.historybookedticket.BookedTicketFragment"
+        android:label="fragment_booked_ticket"
+        tools:layout="@layout/fragment_booked_ticket" >
+        <action
+            android:id="@+id/action_bookedTicketFragment_to_detailTicketBookedFragment"
+            app:destination="@id/detailTicketBookedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFlightFragment"
+        android:name="binar.academy.kelompok6.tripie_admin.view.flightlist.EditFlightFragment"
+        android:label="fragment_edit_flight"
+        tools:layout="@layout/fragment_edit_flight" >
+        <argument
+            android:name="argsEditFlight"
+            app:argType="binar.academy.kelompok6.tripie_admin.model.response.Jadwal"
+            app:nullable="true" />
+        <action
+            android:id="@+id/action_editFlightFragment_to_flightFragment"
+            app:destination="@id/flightFragment"
+            app:popUpTo="@id/editFlightFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_editFlightFragment_to_listAirportDestinationFragment"
+            app:destination="@id/listAirportDestinationFragment" />
+        <action
+            android:id="@+id/action_editFlightFragment_to_listAirportOriginFragment"
+            app:destination="@id/listAirportOriginFragment" />
+        <action
+            android:id="@+id/action_editFlightFragment_to_listPlaneClassFragment"
+            app:destination="@id/listPlaneClassFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailTicketBookedFragment"
+        android:name="binar.academy.kelompok6.tripie_admin.view.historybookedticket.DetailTicketBookedFragment"
+        android:label="fragment_detail_ticket_booked"
+        tools:layout="@layout/fragment_detail_ticket_booked" >
+        <argument
+            android:name="dataTiketBook"
+            app:argType="binar.academy.kelompok6.tripie_admin.model.response.Booking"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </fragment>
+    <fragment
+        android:id="@+id/addFlightFragment"
+        android:name="binar.academy.kelompok6.tripie_admin.view.flightlist.AddFlightFragment"
+        android:label="fragment_add_flight"
+        tools:layout="@layout/fragment_add_flight" >
+        <action
+            android:id="@+id/action_addFlightFragment_to_flightFragment"
+            app:destination="@id/flightFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/addFlightFragment"/>
+        <action
+            android:id="@+id/action_addFlightFragment_to_listAirportDestinationFragment"
+            app:destination="@id/listAirportDestinationFragment" />
+        <action
+            android:id="@+id/action_addFlightFragment_to_listAirportOriginFragment"
+            app:destination="@id/listAirportOriginFragment" />
+        <action
+            android:id="@+id/action_addFlightFragment_to_listPlaneClassFragment"
+            app:destination="@id/listPlaneClassFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/flightFilterListDialog"
+        android:name="binar.academy.kelompok6.tripie_admin.view.flightlist.bottomsheetdialog.FlightFilterListDialog"
+        android:label="dialog_flight_filter"
+        tools:layout="@layout/dialog_flight_filter" />
+    <dialog
+        android:id="@+id/sortingPriceDialog"
+        android:name="binar.academy.kelompok6.tripie_admin.view.flightlist.bottomsheetdialog.SortingFlightDialog"
+        android:label="dialog_sorting_price"
+        tools:layout="@layout/dialog_sorting_flight" />
+    <fragment
+        android:id="@+id/listAirportOriginFragment"
+        android:name="binar.academy.kelompok6.tripie_admin.view.flightlist.ListAirportOriginFragment"
+        android:label="fragment_list_airport_origin"
+        tools:layout="@layout/fragment_list_airport_origin" />
+    <fragment
+        android:id="@+id/listAirportDestinationFragment"
+        android:name="binar.academy.kelompok6.tripie_admin.view.flightlist.ListAirportDestinationFragment"
+        android:label="fragment_list_airport_destination"
+        tools:layout="@layout/fragment_list_airport_destination" />
+    <fragment
+        android:id="@+id/listPlaneClassFragment"
+        android:name="binar.academy.kelompok6.tripie_admin.view.flightlist.ListPlaneClassFragment"
+        android:label="fragment_list_plane_class"
+        tools:layout="@layout/fragment_list_plane_class" />
+</navigation>
